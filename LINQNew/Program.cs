@@ -1,8 +1,10 @@
 ﻿using LINQ.Models;
+using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Numerics;
 using System.Xml.Linq;
 using static LINQ.DataSources.Source;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LINQNew
 {
@@ -157,11 +159,26 @@ namespace LINQNew
 
             #region Question_12
             //12. Sort first by-word length and then by acase -insensitive sort of the words in an array.
-            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
 
             //var result = Arr
             //            .OrderBy(x => x.Length)
             //            .ThenBy(x => x, StringComparer.OrdinalIgnoreCase);
+
+            //foreach (var word in result)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            #endregion
+
+            #region Question_13
+            //Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //string[] words = { "Mike", "John", "Bill", "David", "Lisa", "Tim" };
+            //var result = words
+            //            .Where(x => x.Length > 1 && x[1] == 'i')
+            //            .Reverse()
+            //            .ToList();
 
             //foreach (var word in result)
             //{
