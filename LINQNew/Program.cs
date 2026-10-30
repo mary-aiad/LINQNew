@@ -113,6 +113,18 @@ namespace LINQNew
             //    Console.WriteLine($"Category: {product.Category}, Name: {product.ProductName}, Price: {product.UnitPrice}");
             //}
             #endregion
+
+            #region Question_09
+            //9. Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+
+            //var result = ProductList.Where(x => x.Category == "Beverages")
+            //                        .OrderByDescending(x => x.UnitsInStock);
+
+            //foreach (var product in result)
+            //{
+            //    Console.WriteLine($"Name: {product.ProductName}, Stock: {product.UnitsInStock}");
+            //}
+            #endregion
         }
 
 
