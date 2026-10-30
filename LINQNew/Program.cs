@@ -101,6 +101,18 @@ namespace LINQNew
             //}
 
             #endregion
+
+            #region Question_08
+            //8. Sort ProductList by Category ascending, then within each category, sort by UnitPrice descending.
+
+            //var result = ProductList.OrderBy(x => x.Category)
+            //                        .ThenByDescending(x => x.UnitPrice);
+
+            //foreach (var product in result)
+            //{
+            //    Console.WriteLine($"Category: {product.Category}, Name: {product.ProductName}, Price: {product.UnitPrice}");
+            //}
+            #endregion
         }
 
 
