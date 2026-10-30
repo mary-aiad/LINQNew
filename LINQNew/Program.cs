@@ -144,6 +144,16 @@ namespace LINQNew
             //    Console.WriteLine($"Customer ID: {order.CustomerID}, Order Date: {order.OrderDate}");
             //}
             #endregion
+
+            #region Question_11
+            //11. Show position number alongside ProductName
+
+            //var products = ProductList.Select((p, i) => $"{i + 1}. {p.ProductName}");
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
+            #endregion
         }
 
 
