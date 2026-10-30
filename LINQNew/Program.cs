@@ -57,11 +57,31 @@ namespace LINQNew
             #region Question_05
             //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
 
-            var products = ProductList.Where(p => p.UnitsInStock > 0 && p.Category.Contains("Condiments"));
-            foreach (var product in products)
-            {
-                Console.WriteLine($"Name: {product.ProductName}, Category: {product.Category}, Stock: {product.UnitsInStock}");
-            }
+            //var products = ProductList.Where(p => p.UnitsInStock > 0 && p.Category.Contains("Condiments"));
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine($"Name: {product.ProductName}, Category: {product.Category}, Stock: {product.UnitsInStock}");
+            //}
+            #endregion
+
+            #region Question_06
+            //6. Create a new anonymous type with three properties:Name → the product name, Price → the unit price, StockStatus → a string: "Available" if UnitsInStock > 0,
+            // otherwise "Out of Stock", Print the result.
+
+            //var products = ProductList.Select(P => new
+            //            {
+            //                 Name = P.ProductName,
+            //                 Price = P.UnitPrice,
+            //                 StockStatus = P.UnitsInStock>0 ? "Available": "Out of Stock"
+            //             });
+
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine($"Name: {product.Name}");
+            //    Console.WriteLine($"Price: {product.Price}");
+            //    Console.WriteLine($"Stock Status: {product.StockStatus}");
+            //    Console.WriteLine("-------------------------");
+            //}
             #endregion
 
         }
