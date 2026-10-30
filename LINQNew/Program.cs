@@ -1,4 +1,6 @@
 ﻿using LINQ.Models;
+using System.Drawing;
+using System.Xml.Linq;
 using static LINQ.DataSources.Source;
 
 namespace LINQNew
@@ -55,11 +57,11 @@ namespace LINQNew
             #region Question_05
             //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
 
-            //var products = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments");
-            //foreach (var product in products)
-            //{
-            //    Console.WriteLine($"Name: {product.ProductName}, Category: {product.Category}, Stock: {product.UnitsInStock}");
-            //}
+            var products = ProductList.Where(p => p.UnitsInStock > 0 && p.Category.Contains("Condiments"));
+            foreach (var product in products)
+            {
+                Console.WriteLine($"Name: {product.ProductName}, Category: {product.Category}, Stock: {product.UnitsInStock}");
+            }
             #endregion
 
         }
