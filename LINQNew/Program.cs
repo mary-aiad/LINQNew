@@ -1,5 +1,6 @@
 ﻿using LINQ.Models;
 using System.Drawing;
+using System.Numerics;
 using System.Xml.Linq;
 using static LINQ.DataSources.Source;
 
@@ -123,6 +124,24 @@ namespace LINQNew
             //foreach (var product in result)
             //{
             //    Console.WriteLine($"Name: {product.ProductName}, Stock: {product.UnitsInStock}");
+            //}
+            #endregion
+
+            #region Question_10
+            //10. Using QUERY SYNTAX with a compound from clause, list all orders placed in 1997 or later showing CustomerID and OrderDate.
+
+            //var orders = from c in CustomerList
+            //             from o in c.Orders
+            //             where o.OrderDate.Year >= 1997
+            //             select new
+            //             {
+            //                 CustomerID = c.CustomerID,
+            //                 OrderDate = o.OrderDate
+            //             };
+
+            //foreach (var order in orders)
+            //{
+            //    Console.WriteLine($"Customer ID: {order.CustomerID}, Order Date: {order.OrderDate}");
             //}
             #endregion
         }
