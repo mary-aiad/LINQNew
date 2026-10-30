@@ -84,6 +84,23 @@ namespace LINQNew
             //}
             #endregion
 
+            #region Question_07
+            //7. Print each product's name along with its position (1-based) in the list. Expected format: 1.Chai, 2.Chang, etc.
+            //var products = ProductList.Select(x => new { ID = x.ProductID, Name = x.ProductName});
+
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine($"{product.ID}. {product.Name}");
+            //}
+
+            ///Another Way
+            //var products = ProductList.Select((p, i) => $"{i +1 }. {p.ProductName}");
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
         }
 
 
